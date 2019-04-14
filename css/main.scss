@@ -1,0 +1,445 @@
+/* CSS Document */
+//values
+$mobile: 965px;
+
+//Style
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Arial;
+	width: 100%;
+}
+.container {
+	width: 100%;
+	min-height: calc(100vh - 5em);
+	position: relative;
+	background: black;
+	background-image: radial-gradient(rgba(228, 9, 126, .3), black);
+	background-repeat: no-repeat;
+}
+
+
+// Colors
+$vyskah: 3em;
+.active {
+	border-bottom: 0.2em solid #e4097e !important;
+}
+.header {
+	.logo {
+		flex:1;
+	}
+	.mobilemenu {
+		.mobilemenudown {
+			width: calc(100% - 4px);
+			left: -110%;
+			padding: 0.1em;
+			font-size: 0.7em;
+			background: rgba(0,0,0,0.85);
+			border: 1px solid white;
+			position: fixed;
+			display: grid;
+			margin-top: 1em;
+			text-align: right;
+			border-radius: 0.5em;
+			transition: left 500ms ease;
+			a {
+				border-bottom: 0.2em solid #303030;
+				text-decoration: none;
+				margin-top: 1em;
+				padding-right: 1.2em;
+				padding-left: 1.2em;
+			}
+		}
+		a {
+			color: white;
+		}
+		flex: 1;
+		@media screen and (max-width: $mobile) {
+			display: block;
+		}
+		@media screen and (min-width: $mobile) {
+			display: none;
+		}
+		text-align: right;
+		position: relative;
+		margin-right: 2em;
+		font-size: 3em;
+	}
+	.menu {
+		a {
+			padding-bottom: 0.5em;
+			border-bottom: 0.2em solid #303030;
+			text-decoration: none;
+			color: white;
+			margin-right: 1em;
+			transition: border-bottom 300ms ease, text-shadow 300ms ease;
+		}
+		a:hover {
+				border-bottom: 0.2em solid #e4097e;
+				text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+			}
+		flex:2;
+		@media screen and (max-width: $mobile) {
+			display: none;
+		}
+		@media screen and (min-width: $mobile) {
+			display: block;
+		}
+		text-align: right;
+		margin-right: 2em;
+	}
+	box-shadow: 0px -21px 52px 39px rgba(228, 9, 126, .5);
+	box-shadow: 0px -21px 52px 39px rgba(228, 9, 126, .5);
+	box-shadow: 0px -21px 52px 39px rgba(228, 9, 126, .5);
+	justify-content: space-between;
+	display: flex;
+	position: fixed;
+	z-index: 25;
+	left:0;
+	top:0;
+	width: 100%;
+	background-color: black;
+	padding: 1em;
+	@media screen and (max-width: $mobile) {
+		height: 5em;
+	}
+	@media screen and (min-width: $mobile) {
+		height: $vyskah;
+	}
+	align-items: center;
+}
+.logoimg {
+	margin-left: 1em;
+	background: url(../img/logo.png);
+	background-size: contain;
+	width: 15em;
+	height: 3em;
+	left: 0%;
+	position: relative;
+	animation: kokotVojna 500ms ease;
+	background-repeat: no-repeat;
+}
+
+@keyframes kokotVojna {
+	from { left: -100%}
+	to { left: 0%}
+}
+
+//Main content 
+
+.main {
+	margin-top:5em;
+	display: flex;
+	padding: 3em;
+	z-index:5;
+	position: relative;
+	padding-top: 1em;
+	flex-wrap: wrap;
+}
+.content{
+	min-width: 485px;
+	flex: 3;
+}
+.content .about {
+	h2 {
+		margin-bottom: 1em;
+	}
+	p {
+		text-align: justify;
+		line-height: 1.5em;
+	}
+	color: white;
+	
+}
+.contact {
+	color: white;
+}
+.band {
+	color: white;
+}
+.bandbox {
+	justify-content: space-around;
+	flex-wrap: wrap;
+	display: flex;
+}
+.bandbox {
+	.m1 {
+		background:url(../img/singer.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		opacity: 0.7;
+		transition: opacity 300ms ease;
+	}
+	.m1:hover {
+		opacity: 1;
+	}
+	.m2 {
+		background:url(../img/sologuitar.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		opacity: 0.7;
+		transition: opacity 300ms ease;
+	}
+	.m2:hover {
+		opacity: 1;
+	}
+	.m3 {
+		background:url(../img/guitarist.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		opacity: 0.7;
+		transition: opacity 300ms ease;
+	}
+	.m3:hover {
+		opacity: 1;
+	}
+	.m4 {
+		background:url(../img/keyboard.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		opacity: 0.7;
+		transition: opacity 300ms ease;
+	}
+	.m4:hover {
+		opacity: 1;
+	}
+	.m5 {
+		background:url(../img/bass.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		opacity: 0.7;
+		transition: opacity 300ms ease;
+	}
+	.m5:hover {
+		opacity: 1;
+	}
+	.m6 {
+		background:url(../img/drums.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		opacity: 0.7;
+		transition: opacity 300ms ease;
+	}
+	.m6:hover {
+		opacity: 1;
+	}
+}
+.member {
+	position: relative;
+	border: 0.1em solid white;
+	height: 20em;
+	width: 15em;
+	margin-bottom: 2em;
+	.aboutmember {
+		opacity: 0;
+		padding: 0.5em;
+		position: absolute;
+		bottom:-3em;
+		width: calc(100% - 1em);
+		background: rgba(0,0,0,0.7);
+		transition: opacity 300ms ease, bottom 300ms ease;
+	}
+}
+.member:hover {
+	.aboutmember {
+		opacity: 1;
+		bottom: 0;
+	}
+}
+
+
+.events_small {
+	h3 {
+		text-align: center;
+	}
+	padding-top: 1em;
+	border-radius: 1em;
+	background-color: rgba(228, 9, 126, .05);
+}
+.event_small {
+	margin-bottom: 0.1em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	padding-left: 1em;
+	border-radius: 1em;
+	background-color: rgba(228, 9, 126, .05);
+	transition: background-color 300ms ease;
+}
+.event_small:hover {
+	background-color: rgba(228, 9, 126, .1);
+}
+.events_big {
+	position: relative;
+	color: white;
+}
+.event_big {
+	p.einfo::first-line {
+		font-size: 1.3em;
+		text-transform: uppercase;
+	}
+	p.einfo {
+		font-size: 1.2em;
+	}
+	p.notes {
+		margin-top: 0.3em;
+	}
+	//line-height: 1.3em;
+	margin-bottom: 1em;
+	background-color: rgba(228, 9, 126, .1);
+	color: white;
+	border-radius: 1em;
+	padding: 1em;
+	transition: background-color 300ms ease;
+}
+.event_big:hover {
+	background-color: rgba(228, 9, 126, .15);
+}
+
+//SIDEBAR
+
+.aside {
+	@media screen and (min-width:$mobile) {
+		margin-left: 3em;
+	}
+	@media screen and (max-width:$mobile) {
+		margin-left: 0;
+	}
+	flex: 1;
+	color: white;
+	position: relative;
+	z-index: 5;
+}
+.widget {
+	margin-bottom: 2em;
+}
+.fbwidget {
+	h3 {
+		text-align: center;
+	}
+	iframe {
+		margin: auto;
+	}
+	padding-bottom: 0.7em;
+	min-width: 320px;
+	max-width: 320px;
+	padding-top: 1em;
+	margin: 0 auto 2em;
+	border-radius: 1em;
+	background-color: rgba(228, 9, 126, .05);
+}
+.partners {
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	background-color: rgba(228, 9, 126, .05);
+	border-radius: 1em;
+}
+.video {
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	background-color: rgba(228, 9, 126, .05);
+	border-radius: 1em;
+}
+.partners_box {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.p1 {
+	background:url(/img/nexx.jpg);
+}
+.p2 {
+	background:url(/img/gtnett.jpg) 50%;
+}
+.p3 {
+	background:url(/img/kostelec.jpg);
+}
+.p4 {
+	background:url(/img/jmtisk.png);
+}
+.p5 {
+	background:url(/img/lmsystemm.jpg) 40%;
+}
+.partner {
+	width: 5em;
+	height: 5em;
+	border-radius: 1em;
+	background-size:cover;
+	background-repeat: no-repeat;
+	&:hover {
+		animation: kokotkovina 300ms linear;
+	}
+	position: relative;
+}
+@keyframes kokotkovina {
+	/*
+	0% {bottom:0; transform: rotate(0deg) scale(1);}
+	50% {bottom: 2em; transform: rotate(180deg) scale(1.2);}
+	100% {bottom: 0; transform: rotate(360deg) scale(1);}
+	*/
+	0% {transform: rotate(0deg);}
+	25%{transform: rotate(25deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-25deg);}
+	100%{transform: rotate(0deg);}
+}
+
+//Footer
+
+.footer {
+	padding-right: 2em;
+	padding-left: 2em;
+	@media screen and (max-width: $mobile) {
+		height: 5em;
+	}
+	@media screen and (min-width: $mobile) {
+		height: 4em;
+	}
+	position: absolute;
+	background: black;
+	bottom:0;
+	left:0;
+	width: calc(100% - 4em);
+	display: flex;
+	justify-content: space-between;
+	z-index: 20;
+	
+}
+.f_row {
+	p{
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			color: rgb(228, 9, 126);
+		}
+	}
+	display: flex;
+	color: white;
+	align-items: center;
+}
+.social {
+	a {
+		color: white;
+		margin-right: 2em;
+		text-decoration: none;
+		
+	}
+	i {
+		font-size: 2em;
+	}
+	i:hover {
+		color: rgb(228, 9, 126);
+	}
+	text-align: right;
+}

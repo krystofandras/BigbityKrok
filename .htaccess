@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([A-Za-z0-9-\_]+)/?$ ?page=$1 [L]

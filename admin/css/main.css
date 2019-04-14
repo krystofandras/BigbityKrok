@@ -1,0 +1,70 @@
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: Arial;
+  color: white;
+  background: black;
+  background-image: radial-gradient(rgba(228, 9, 126, 0.3), black);
+  background-repeat: no-repeat;
+  min-height: 70vh; }
+
+.addEvent {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(228, 9, 126, 0.2); }
+  .addEvent textarea {
+    width: 100%; }
+
+.remEvent {
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(228, 9, 126, 0.2); }
+  .remEvent table {
+    width: 100%; }
+  .remEvent table, .remEvent tr, .remEvent td {
+    border: 1px solid black;
+    border-collapse: collapse; }
+  .remEvent td {
+    padding: 0.2em; }
+    .remEvent td form {
+      margin-left: 0.2em;
+      display: inline-block; }
+
+h1 {
+  text-align: center; }
+
+p {
+  text-align: center; }
+
+#logoutb {
+  text-align: center; }
+  #logoutb input {
+    width: 5em;
+    height: 2em; }
+
+.editEvent {
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(228, 9, 126, 0.2); }
+  .editEvent table {
+    width: 100%; }
+  .editEvent table, .editEvent tr, .editEvent td {
+    border: 1px solid black;
+    border-collapse: collapse; }
+  .editEvent td {
+    padding: 0.2em; }
